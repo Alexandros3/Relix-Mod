@@ -3,6 +3,7 @@ package net.snooper.relixmod;
 import net.fabricmc.api.ModInitializer;
 import net.snooper.relixmod.block.ModBlocks;
 import net.snooper.relixmod.items.ModItems;
+import net.snooper.relixmod.particle.ModParticles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +16,7 @@ public class RelixMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModParticles.registerParticles();
 	}
 }
