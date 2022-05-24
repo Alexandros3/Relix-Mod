@@ -10,15 +10,16 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.snooper.relixmod.RelixMod;
-
+import net.snooper.relixmod.block.custom.AlexandriteOre;
+import net.snooper.relixmod.items.ModItemGroup;
 
 
 public class ModBlocks {
 
     public static  final Block ALEXANDRITE_ORE = registerBlock("alexandrite_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)
+            new AlexandriteOre(FabricBlockSettings.of(Material.STONE)
                     .strength(2f)
-                    .requiresTool()), ItemGroup.MISC);
+                    .requiresTool()), ModItemGroup.Relix);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

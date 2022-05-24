@@ -10,7 +10,7 @@ import net.snooper.relixmod.RelixMod;
 
 public class ModItems {
     public static final Item ALEXANDRITE_CRYSTAL = registerItem("alexandrite-crystal",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+            new Item(new FabricItemSettings().group(ModItemGroup.Relix)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registry.ITEM, new Identifier(RelixMod.MOD_ID, name), item);

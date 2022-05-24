@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.snooper.relixmod.block.ModBlocks;
 import net.snooper.relixmod.particle.ModParticles;
 import net.snooper.relixmod.particle.custom.AlexandriteParticle;
-
+import net.snooper.relixmod.particle.custom.AlexandriteParticleTurq;
 
 
 public class RelixClientMod implements ClientModInitializer {
@@ -19,5 +19,6 @@ public class RelixClientMod implements ClientModInitializer {
         }));
 
         ParticleFactoryRegistry.getInstance().register(ModParticles.ALEXANDRITE_PARTICLE, AlexandriteParticle.Factory::new);
+        ParticleFactoryRegistry.getInstance().register(ModParticles.ALEXANDRITE_TURQ_PARTICLE, AlexandriteParticleTurq.Factory::new);
     }
 }
