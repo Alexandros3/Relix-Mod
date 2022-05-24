@@ -17,6 +17,5 @@ public class RelixMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
-		ModParticles.registerParticles();
-	}
+		ModParticles.registerParticles();	}
 }
